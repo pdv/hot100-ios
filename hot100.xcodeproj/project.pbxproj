@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F4D65642A38DE8D0017F975 /* hot100App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D65632A38DE8D0017F975 /* hot100App.swift */; };
-		3F4D65662A38DE8D0017F975 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D65652A38DE8D0017F975 /* ContentView.swift */; };
-		3F4D65682A38DE900017F975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4D65672A38DE900017F975 /* Assets.xcassets */; };
-		3F4D656B2A38DE900017F975 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4D656A2A38DE900017F975 /* Preview Assets.xcassets */; };
+		3F4D65642A38DE8D0017F975 /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D65632A38DE8D0017F975 /* app.swift */; };
+		3F4D65662A38DE8D0017F975 /* view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D65652A38DE8D0017F975 /* view.swift */; };
 		3F9408C52BD1CA4C001777DA /* db.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9408C42BD1CA4C001777DA /* db.swift */; };
 		3F9408C72BD1CB13001777DA /* hot100.db in Resources */ = {isa = PBXBuildFile; fileRef = 3F9408C62BD1CB13001777DA /* hot100.db */; };
 /* End PBXBuildFile section */
@@ -34,10 +32,8 @@
 
 /* Begin PBXFileReference section */
 		3F4D65602A38DE8D0017F975 /* hot100.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hot100.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F4D65632A38DE8D0017F975 /* hot100App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hot100App.swift; sourceTree = "<group>"; };
-		3F4D65652A38DE8D0017F975 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3F4D65672A38DE900017F975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F4D656A2A38DE900017F975 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F4D65632A38DE8D0017F975 /* app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app.swift; sourceTree = "<group>"; };
+		3F4D65652A38DE8D0017F975 /* view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view.swift; sourceTree = "<group>"; };
 		3F4D65702A38DE900017F975 /* hot100Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hot100Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4D657A2A38DE900017F975 /* hot100UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hot100UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9408C42BD1CA4C001777DA /* db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = db.swift; sourceTree = "<group>"; };
@@ -91,21 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				3F9408C62BD1CB13001777DA /* hot100.db */,
-				3F4D65632A38DE8D0017F975 /* hot100App.swift */,
-				3F4D65652A38DE8D0017F975 /* ContentView.swift */,
-				3F4D65672A38DE900017F975 /* Assets.xcassets */,
-				3F4D65692A38DE900017F975 /* Preview Content */,
+				3F4D65632A38DE8D0017F975 /* app.swift */,
+				3F4D65652A38DE8D0017F975 /* view.swift */,
 				3F9408C42BD1CA4C001777DA /* db.swift */,
 			);
 			path = hot100;
-			sourceTree = "<group>";
-		};
-		3F4D65692A38DE900017F975 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3F4D656A2A38DE900017F975 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,9 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F4D656B2A38DE900017F975 /* Preview Assets.xcassets in Resources */,
 				3F9408C72BD1CB13001777DA /* hot100.db in Resources */,
-				3F4D65682A38DE900017F975 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,9 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F4D65662A38DE8D0017F975 /* ContentView.swift in Sources */,
+				3F4D65662A38DE8D0017F975 /* view.swift in Sources */,
 				3F9408C52BD1CA4C001777DA /* db.swift in Sources */,
-				3F4D65642A38DE8D0017F975 /* hot100App.swift in Sources */,
+				3F4D65642A38DE8D0017F975 /* app.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +384,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"hot100/Preview Content\"";
 				DEVELOPMENT_TEAM = 6M5XPAYXPF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -429,7 +412,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"hot100/Preview Content\"";
 				DEVELOPMENT_TEAM = 6M5XPAYXPF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
